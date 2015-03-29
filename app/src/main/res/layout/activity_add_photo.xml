@@ -1,0 +1,85 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="false"
+    android:id="@+id/x">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Photo Title: "
+            android:id="@+id/photoTitle"
+            android:textSize="18dp"
+            android:textIsSelectable="false"
+            android:textColor="#ff000000"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleInput"
+            android:textColor="#ff000000"
+            android:layout_gravity="center_horizontal" />
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Photo"
+            android:id="@+id/addPhoto"
+            android:layout_marginTop="33dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#ff91d1e2"
+            android:padding="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_marginTop="48dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Description:"
+            android:id="@+id/addPhotoDesc"
+            android:textSize="18dp"
+            android:textIsSelectable="false"
+            android:textColor="#ff000000" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:id="@+id/photoDesc"
+            android:maxLength="2000"
+            android:maxLines="5"
+            android:textColor="#ff000000"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Photo"
+            android:id="@+id/addPhotoSubmit"
+            android:layout_gravity="right"
+            android:textColor="#ff000000"
+            android:background="#ff91d1e2"
+            android:onClick="addToDb"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp" />
+
+    </LinearLayout>
+</ScrollView>
